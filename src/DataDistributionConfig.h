@@ -1,0 +1,21 @@
+#ifndef DATADISTRIBUTIONCONFIG
+#define DATADISTRIBUTIONCONFIG
+
+#ifdef _WIN32
+
+#ifdef DATADISTRIBUTIONCONFIG_EXPORT
+#define DATADISTRIBUTIONCONFIG_API __declspec(dllexport)
+#else
+#define DATADISTRIBUTIONCONFIG_API __declspec(dllimport)
+#endif // DATADISTRIBUTIONCONFIG_EXPORT
+
+#else
+#ifdef DATADISTRIBUTIONCONFIG_EXPORT
+#define DATADISTRIBUTIONCONFIG_API __attribute__ ((visibility("default"))
+#else
+#define DATADISTRIBUTIONCONFIG_API __attribute__ ((visibility("default"))
+#endif // DATADISTRIBUTIONCONFIG_EXPORT
+
+#endif // _WIN32
+
+#endif // !DATADISTRIBUTIONCONFIG

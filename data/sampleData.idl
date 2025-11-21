@@ -1,0 +1,35 @@
+#ifndef SAMPLEDATA_H
+#define SAMPLEDATA_H
+
+@extensibility(APPENDABLE)
+
+module sampleData_idl {
+	/*
+	 等级
+
+	*/
+
+	#define LDefault -1;
+	#define LLow 0;
+	#define LMidumn 1;
+	#define LHigh 2;
+	typedef long Level;
+
+	struct Vec3Df {
+		double x;
+		double y;
+		double z;
+	};
+
+	/*实体数据 */
+	struct EntityData {
+		string time;
+		string entityId;
+		Vec3Df pos;
+		Level entityLevel;
+	};
+
+
+};
+
+#endif
