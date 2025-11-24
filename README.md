@@ -1,0 +1,13 @@
+缺少fastdds3.2.2动态库，debug版本是直接安装eProsima_Fast-DDS-3.2.2-Windows.exe，release版本的需要下载动态库。
+中间件需要的动态库文件夹目录是
+FASTDDS
+-----include
+-------fastcdr
+-------fastdds
+-------foonathan_memory
+-----lib
+-------foonathan_memory-0.7.3.lib
+-------libcrypto.lib
+-------libfastcdr-2.3.lib
+-------libfastdds-3.2.lib
+-------libssl.lib
